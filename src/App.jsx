@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import './App.css'
-import NamesList from './components/NamesList.jsx'
+import Styles from './components/Styles.jsx'
+import './components/style.css'
 
 function App() {
 
   return (
     <>
-      <NamesList />
+      <Styles />
     </>
   )
 }
