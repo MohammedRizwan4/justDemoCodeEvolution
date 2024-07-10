@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import './App.css'
-import Counter from './components/Counter.jsx'
+import EventBind from './components/EventBind.jsx'
 
 function App() {
 
   return (
     <>
-      <Counter />
+      <EventBind />
     </>
   )
 }
