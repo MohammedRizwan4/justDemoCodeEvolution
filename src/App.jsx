@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import './App.css'
 import './components/style.css'
-import LifeCycleA from './components/LifeCycleA.jsx'
+import Parent from './components/Parent.jsx'
 
 function App() {
 
   return (
     <>
-      <LifeCycleA />
+      <Parent />
     </>
   )
 }
