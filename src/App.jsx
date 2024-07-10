@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import './App.css'
 import './components/style.css'
-import FocusInput from './components/FocusInput'
+import FRParentInput from './component/FRParentInput'
 
 function App() {
 
   return (
     <>
-      <FocusInput />
+      <FRParentInput />
     </>
   )
 }
