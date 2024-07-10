@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import './App.css'
-import UserGreeting from './components/UserGreeting.jsx'
+import NamesList from './components/NamesList.jsx'
 
 function App() {
 
   return (
     <>
-      <UserGreeting />
+      <NamesList />
     </>
   )
 }
