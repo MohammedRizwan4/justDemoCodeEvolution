@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import './App.css'
-import Message from './components/Message.jsx'
+import Counter from './components/Counter.jsx'
 
 function App() {
 
   return (
     <>
-      <Message />
+      <Counter />
     </>
   )
 }
