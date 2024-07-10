@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import './App.css'
-import EventBind from './components/EventBind.jsx'
+import UserGreeting from './components/UserGreeting.jsx'
 
 function App() {
 
   return (
     <>
-      <EventBind />
+      <UserGreeting />
     </>
   )
 }
