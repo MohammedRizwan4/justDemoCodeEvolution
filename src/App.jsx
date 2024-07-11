@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import './App.css'
-import CounterTwo from './components/CounterTwo'
+import CounterThree from './components/CounterThree'
 
 function App() {
 
   return (
     <>
-      <CounterTwo />
+      <CounterThree />
     </>
   )
 }
