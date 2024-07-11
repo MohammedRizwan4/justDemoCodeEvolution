@@ -1,11 +1,13 @@
 import { useState } from 'react'
 import './App.css'
-import UseStateHook from './components/UseStateHook'
+import ClassUseEffect from './components/ClassUseEffect'
+import UseEffectHook from './components/UseEffectHook'
 
 function App() {
   return (
     <>
-      <UseStateHook />
+      {/* <ClassUseEffect /> */}
+      <UseEffectHook />
     </>
   )
 }
