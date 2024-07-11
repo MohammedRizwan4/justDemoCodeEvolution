@@ -20,7 +20,7 @@ export default class Counter extends Component {
     render() {
         return (
             <div>
-                {this.props.render(this.state.count, this.incrementCount)}
+                {this.props.children(this.state.count, this.incrementCount)}
             </div>
         )
     }

@@ -9,8 +9,12 @@ function App() {
 
   return (
     <>
-      <Counter render={(count, incrementCount) => <ClickCounterTwo count={count} incrementCount={incrementCount} />} />
-      <Counter render={(count, incrementCount) => <HoverCounterTwo count={count} incrementCount={incrementCount} />} />
+      <Counter>
+        {(count, incrementCount) => (<ClickCounterTwo count={count} incrementCount={incrementCount} />)}
+      </Counter>
+      <Counter>
+        {(count, incrementCount) => (<HoverCounterTwo count={count} incrementCount={incrementCount} />)}
+      </Counter>
     </>
   )
 }
