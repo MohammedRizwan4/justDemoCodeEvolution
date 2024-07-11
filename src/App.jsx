@@ -1,18 +1,15 @@
 import { useState } from 'react'
 import './App.css'
 import './components/style.css'
-import Hero from './component/Hero'
-import ErrorBoundary from './component/ErrorBoundary'
+import ClickCounter from './component/ClickCounter'
+import HoverCounter from './component/HoverCounter'
 
 function App() {
 
   return (
     <>
-      <ErrorBoundary>
-        <Hero heroName="Joker" />
-      </ErrorBoundary>
-      <Hero heroName="Poker" />
-      <Hero heroName="Soker" />
+      <ClickCounter name='Rizwan'/>
+      <HoverCounter name='Raiyan'/>
     </>
   )
 }
