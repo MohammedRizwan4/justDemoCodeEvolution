@@ -1,13 +1,18 @@
 import { useState } from 'react'
 import './App.css'
 import './components/style.css'
-import PortalDemo from './component/PortalDemo'
+import Hero from './component/Hero'
+import ErrorBoundary from './component/ErrorBoundary'
 
 function App() {
 
   return (
     <>
-      <PortalDemo />
+      <ErrorBoundary>
+        <Hero heroName="Joker" />
+      </ErrorBoundary>
+      <Hero heroName="Poker" />
+      <Hero heroName="Soker" />
     </>
   )
 }
