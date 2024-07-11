@@ -1,13 +1,15 @@
 import { useState } from 'react'
 import './App.css'
-import ClassUseEffect from './components/ClassUseEffect'
 import UseEffectHook from './components/UseEffectHook'
+import ClassUseEffect from './components/ClassUseEffect'
 
 function App() {
+  const [display, setDisplay] = useState(true)
   return (
     <>
-      {/* <ClassUseEffect /> */}
-      <UseEffectHook />
+      <button onClick={() => setDisplay(!display)}>Click</button>
+      {display && <UseEffectHook />}
+      {display && <ClassUseEffect />}
     </>
   )
 }

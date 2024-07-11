@@ -22,6 +22,11 @@ export default class ClassUseEffect extends Component {
         document.title = `Clicked ${this.state.count} times`
     }
 
+    componentWillUnmount() {
+        window.removeEventListener('mousemove', this.handleMouseOver)
+        console.log("Component will unmounting");
+    }
+
     componentDidUpdate(prevProps, prevState) {
         // will only be called when state change
         if (prevState.count !== this.state.count) {

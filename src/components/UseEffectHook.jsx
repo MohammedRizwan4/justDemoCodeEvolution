@@ -21,7 +21,12 @@ const UseEffectHook = () => {
     useEffect(() => {
         console.log("useState logging");
         window.addEventListener("mousemove", handleMouseOver)
-    },[])
+
+        // clean up to remove evenlistners when unmount
+        return () => {
+            window.removeEventListener('mousemove', handleMouseOver)
+        }
+    }, [])
 
     return (
         <div>
