@@ -1,6 +1,9 @@
 import React from "react";
 
-const UserContext = React.createContext();
+const UserContext = React.createContext({
+    name: "Rizwan",
+    age: 21
+});
 
 const UserProvider = UserContext.Provider
 const UserConsumer = UserContext.Consumer;

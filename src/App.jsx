@@ -12,9 +12,9 @@ function App() {
 
   return (
     <>
-      <UserProvider value={info}>
+      {/* <UserProvider value={info}> */}
         <ComponentA />
-      </UserProvider>
+      {/* </UserProvider> */}
     </>
   )
 }
