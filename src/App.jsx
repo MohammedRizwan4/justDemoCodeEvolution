@@ -1,11 +1,20 @@
 import { useState } from 'react'
 import './App.css'
+import ComponentA from './components/ComponentA'
+import { UserProvider } from './components/userContext'
 
 function App() {
 
+  const info = {
+    name: "Rizwan",
+    age: 21
+  }
+
   return (
     <>
-      <h1>Hello world</h1>
+      <UserProvider value={info}>
+        <ComponentA />
+      </UserProvider>
     </>
   )
 }
