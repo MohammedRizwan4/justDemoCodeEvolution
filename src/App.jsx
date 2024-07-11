@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import './App.css'
 import './components/style.css'
-import FRParentInput from './component/FRParentInput'
+import PortalDemo from './component/PortalDemo'
 
 function App() {
 
   return (
     <>
-      <FRParentInput />
+      <PortalDemo />
     </>
   )
 }
