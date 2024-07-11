@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import './App.css'
+import CounterOne from './components/CounterOne'
 
 function App() {
 
-
   return (
     <>
-      <h1>Hello world</h1>
+      <CounterOne />
     </>
   )
 }
