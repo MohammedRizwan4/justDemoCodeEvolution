@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './App.css'
-import ComponentE from './components/ComponentE'
+import ComponentD from './components/ComponentD'
 
 // here we have to create individual context for every value to access
 export const UserContext = React.createContext()
@@ -13,7 +13,7 @@ function App() {
     <>
       <UserContext.Provider value="Rizwan">
         <AdminContext.Provider value="Admin">
-          <ComponentE />
+          <ComponentD />
         </AdminContext.Provider>
       </UserContext.Provider>
     </>
